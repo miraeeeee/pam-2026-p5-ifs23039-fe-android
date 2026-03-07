@@ -49,6 +49,7 @@ class UserRepository : IUserRepository {
             userDAO.username = newUser.username
             userDAO.password = newUser.password
             userDAO.photo = newUser.photo
+            userDAO.bio = newUser.bio
             userDAO.updatedAt = newUser.updatedAt
             true
         } else {

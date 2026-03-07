@@ -19,6 +19,7 @@ fun userDAOToModel(dao: UserDAO) = User(
     dao.username,
     dao.password,
     dao.photo,
+    dao.bio,
     dao.createdAt,
     dao.updatedAt
 )
@@ -37,8 +38,8 @@ fun todoDAOToModel(dao: TodoDAO) = Todo(
     title = dao.title,
     description = dao.description,
     isDone =  dao.isDone,
+    urgency = dao.urgency,
     cover = dao.cover,
     createdAt = dao.createdAt,
     updatedAt = dao.updatedAt
 )
-
