@@ -1,0 +1,11 @@
+package org.delcom.pam_p5_ifs23039.network.todos.data
+
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class RequestTodo (
+    val title: String,
+    val description: String,
+    val isDone: Boolean = false,
+    val urgency: String? = null   // ← ubah jadi nullable
+)
